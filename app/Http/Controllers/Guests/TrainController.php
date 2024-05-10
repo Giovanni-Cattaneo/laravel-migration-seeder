@@ -13,7 +13,7 @@ class TrainController extends Controller
      */
     public function index()
     {
-        $trains = Train::whereDate('day_of_departures', '=', now())->orderByDesc('id')->get();
+        $trains = Train::whereDate('day_of_departures', '>=', now())->orderByDesc('id')->get();
         return view('guest.welcome', compact('trains'));
     }
 
