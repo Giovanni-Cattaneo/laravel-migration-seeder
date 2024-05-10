@@ -13,7 +13,8 @@ class TrainController extends Controller
      */
     public function index()
     {
-        //
+        $trains = Train::orderByDesc('id')->get();
+        return view('guest.welcome', compact('trains'));
     }
 
     /**
