@@ -15,3 +15,7 @@ use App\Http\Controllers\Guests\TrainController;
 */
 
 Route::get('/', [TrainController::class, 'index'])->name('home');
+
+Route::get('/abouts', [TrainController::class, 'about'])->name('about');
+
+Route::get('/contacts', [TrainController::class, 'contacts'])->name('contacts');

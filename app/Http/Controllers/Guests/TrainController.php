@@ -17,6 +17,16 @@ class TrainController extends Controller
         return view('guest.welcome', compact('trains'));
     }
 
+    public function about()
+    {
+        return view('guest.about');
+    }
+
+    public function contacts()
+    {
+        return view('guest.contacts');
+    }
+
     /**
      * Show the form for creating a new resource.
      */

@@ -3,10 +3,8 @@
 @section('main-content')
     <div class="container">
         <div class="row">
-
-
             @forelse($trains as $key => $train)
-                <div class="col">
+                <div class="col-6 g-4">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Informazioni:</h4>

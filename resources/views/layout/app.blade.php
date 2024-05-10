@@ -13,13 +13,19 @@
     <!-- Styles -->
     @vite('resources/js/app.js')
 
+    <style>
+        main {
+            background-color: antiquewhite;
+        }
+    </style>
+
 </head>
 
 <body>
 
     @include('partial.header')
 
-    <main>
+    <main class="py-5">
         @yield('main-content')
     </main>
 
