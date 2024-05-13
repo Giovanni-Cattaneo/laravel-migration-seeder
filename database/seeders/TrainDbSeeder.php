@@ -13,18 +13,18 @@ class TrainDbSeeder extends Seeder
      */
     public function run(): void
     {
-        Train::factory()->count(15)->create([
-            'brand' => 'Italo',
-            'departures_station' => 'Milano Centrale',
-            'arrival_station' => 'Roma Termini',
-            'day_of_departures' => '2024-05-10',
-            'departures_hour' => '18:00',
-            'arrival_hour' => '23:30',
-            'sku' => 152535,
-            'carriages' => 25,
-            'on_time' => 0,
-            'canceled' => 1,
+        for ($i = 0; $i < 15; $i++) {
+            Train::create([
+                'brand' => 'Italo',
+                'departures_station' => 'Milano Centrale',
+                'arrival_station' => 'Roma Termini',
+                'day_of_departures' => '2024-05-10',
+                'sku' => 152535,
+                'carriages' => 25,
+                'on_time' => 0,
+                'canceled' => 1,
 
-        ]);
+            ]);
+        }
     }
 }
