@@ -18,7 +18,7 @@ class TrainDbSeeder extends Seeder
                 'brand' => 'Italo',
                 'departures_station' => 'Milano Centrale',
                 'arrival_station' => 'Roma Termini',
-                'day_of_departures' => '2024-05-10',
+                'day_of_departures' => '2024-06-10',
                 'sku' => 152535,
                 'carriages' => 25,
                 'on_time' => 0,
