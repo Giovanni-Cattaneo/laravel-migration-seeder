@@ -1,13 +1,3 @@
-<style>
-    footer {
-        background-color: black;
-
-        & ul {
-            line-height: 2.3rem;
-        }
-    }
-</style>
-
 <footer>
     <div class="container d-flex justify-content-evenly p-5">
         <ul class="list-unstyled">
